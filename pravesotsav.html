@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Pravesotsav - Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styling for the description section */
+        .description-section {
+            padding: 20px;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .description-section h3 {
+            margin-bottom: 10px;
+        }
+
+        .description-section p {
+            font-size: 1.1em;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* 3D effect for gallery images */
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            perspective: 1000px;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Adding a 3D hover effect */
+        .gallery-item:hover img {
+            transform: rotateY(10deg) rotateX(5deg) scale(1.05);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Footer styling */
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="gallery-section">
+        
+        
+        <!-- Description section for School Pravesotsav -->
+        <section class="description-section">
+            <h3>About School Pravesotsav</h3>
+            <p>
+                Pravesotsav is a special event marking the beginning of a new academic year, celebrated with great enthusiasm at Dhudkot Taluka School. 
+                It is a day of welcoming new students, fostering a love for learning, and setting the tone for an exciting academic journey ahead.
+            </p>
+            <p>
+                During this event, students, parents, and teachers come together to celebrate the start of the school year with speeches, 
+                cultural performances, and games. The school ensures a warm welcome for every child entering the school for the first time.
+            </p>
+            <p>
+                This year’s Pravesotsav included a cultural ceremony, interactive sessions between new students and teachers, and motivational speeches by alumni.
+            </p>
+        </section>
+        <h2>School Pravesotsav Gallery</h2>
+
+        <!-- Gallery -->
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="https://i.imgur.com/jVPpOfN.jpeg" alt="Pravesotsav Image 1">
+                <p>Welcome Ceremony for New Students</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.imgur.com/PcUcdck.jpeg" alt="Pravesotsav Image 2">
+                <p>Cultural Performance by Students</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.imgur.com/dotpxb4.jpeg" alt="Pravesotsav Image 3">
+                <p>Interaction with Teachers</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.imgur.com/0G98Jhr.jpeg" alt="Pravesotsav Image 4">
+                <p>Deep Pragatya by Alumni</p>
+            </div>
+        </div>
+
+        <!-- Navigation buttons -->
+        <div class="home-button-container">
+            <a href="index.html" class="home-button">Home</a>
+            <div class="back-button-container">
+                <button onclick="goBack()" class="back-button">Back</button>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2024 Dhudkot Taluka School. All rights reserved.</p>
+        </footer>
+    </section>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

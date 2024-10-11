@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachers' Day - Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styling for the description section */
+        .description-section {
+            padding: 20px;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .description-section h3 {
+            margin-bottom: 10px;
+        }
+
+        .description-section p {
+            font-size: 1.1em;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* 3D effect for gallery images */
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            perspective: 1000px; /* Add perspective for 3D effect */
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Adding a 3D hover effect */
+        .gallery-item:hover img {
+            transform: rotateY(10deg) rotateX(5deg) scale(1.05);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Footer styling */
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="gallery-section">
+        
+        
+        <!-- New description section for Teachers' Day -->
+        <section class="description-section">
+            <h3>About Teachers' Day Celebration</h3>
+            <p>
+                Teachers' Day is a special occasion to honor the invaluable contribution of teachers in shaping the future of our students. 
+                At Dhudkot Taluka School, we celebrate this day with a series of activities organized by our students to express their gratitude 
+                and admiration for their mentors. The event is filled with heartfelt performances, speeches, and fun activities.
+            </p>
+            <p>
+                This year's Teachers' Day included performances by students, a special thank you speech by the student council, 
+                and games that involved both teachers and students. It was a joyous celebration, recognizing the dedication 
+                of our educators in fostering knowledge and inspiration.
+            </p>
+        </section>
+        <h2>Teachers' Day Gallery</h2>
+
+        
+        
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="https://i.imgur.com/RM4zYYv.jpeg" alt="Teachers' Day Image 1">
+                <p>Students Thanking Teachers</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.imgur.com/W952IWl.jpeg" alt="Teachers' Day Image 2">
+                <p>Teachers Engaged in Fun Activities</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.imgur.com/kKGt4nI.jpeg" alt="Teachers' Day Image 3">
+                <p>Special Performances by Students</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.imgur.com/YshRMyt.jpeg" alt="Teachers' Day Image 4">
+                <p>Teacher Appreciation Ceremony</p>
+            </div>
+        </div>
+        <div class="home-button-container">
+            <a href="index.html" class="home-button">Home</a>
+            <div class="back-button-container">
+                <button onclick="goBack()" class="back-button">Back</button>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2024 Dhudkot Taluka School. All rights reserved.</p>
+        </footer>
+    </section>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

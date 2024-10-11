@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navaratri Celebration - Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styling for the description section */
+        .description-section {
+            padding: 20px;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .description-section h3 {
+            margin-bottom: 10px;
+        }
+
+        .description-section p {
+            font-size: 1.1em;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* 3D effect for gallery images */
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            perspective: 1000px; /* Add perspective for 3D effect */
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Adding a 3D hover effect */
+        .gallery-item:hover img {
+            transform: rotateY(10deg) rotateX(5deg) scale(1.05);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Footer styling */
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="gallery-section">
+        
+        <!-- New description section for Navaratri Celebration -->
+        <section class="description-section">
+            <h3>About Navaratri Celebration</h3>
+            <p>
+                Navaratri is a joyous and colorful festival celebrated across India, and at Dhudkot Taluka School, it is a time of great excitement and unity. 
+                The nine-day celebration is filled with devotion, music, and traditional Garba and Dandiya performances by students and staff alike. 
+                It's an occasion to honor the victory of good over evil and to celebrate the strength and grace of the Goddess Durga.
+            </p>
+            <p>
+                This year’s Navaratri celebration included vibrant performances, Garba dance competitions, and the school premises decorated with lights 
+                and traditional motifs. The students participated enthusiastically, making it a memorable event filled with energy and devotion.
+            </p>
+        </section>
+
+        <h2>Navaratri Celebration Gallery</h2>
+        
+        <!-- Gallery -->
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="https://i.imgur.com/moCgSdN.jpeg" alt="Navaratri Image 1">
+                <p>Traditional Garba Dance</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.imgur.com/AUEwQqZ.jpeg" alt="Navaratri Image 2">
+                <p>Decorated School Premises</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.imgur.com/QhyQXAq.jpeg" alt="Navaratri Image 3">
+                <p>Students Performing Dandiya</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.imgur.com/WwXXyb7.jpeg" alt="Navaratri Image 4">
+                <p>Devotional Songs and Dance</p>
+            </div>
+        </div>
+
+        <!-- Navigation buttons -->
+        <div class="home-button-container">
+            <a href="index.html" class="home-button">Home</a>
+            <div class="back-button-container">
+                <button onclick="goBack()" class="back-button">Back</button>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2024 Dhudkot Taluka School. All rights reserved.</p>
+        </footer>
+    </section>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
